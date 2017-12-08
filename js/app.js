@@ -1,13 +1,4 @@
-// Hello.
-//
-// This is JSHint, a tool that helps to detect errors and potential
-// problems in your JavaScript code.
-//
-// To start, simply enter some JavaScript anywhere on this page. Your
-// report will appear on the right side.
-//
-// Additionally, you can toggle specific options in the Configure
-// menu.
+
 // Enemies our player must avoid
 
 var Enemy = function(x, y) {
@@ -61,7 +52,7 @@ Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 //This checks for collisions and resets the player position- Collision check function was based on several inputs given by forum mentors and co-students on the 
-//diccussion forum.
+//discussion forum.
 Player.prototype.update = function(dt) {
     for (var i = 0; i < allEnemies.length; i++) {
         if (this.x < allEnemies[i].x + 50 && this.x + 50 > allEnemies[i].x && this.y < allEnemies[i].y + 37 && this.y + 37 > allEnemies[i].y) {
